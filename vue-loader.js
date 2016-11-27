@@ -65,7 +65,7 @@ window.Vue.Loader = (function() {
       var vue = Loader.vues[path];
       if (vue && vue.ready !== true) ready = false;
     });
-    return ready && callback && setTimeout(callback, 1000);
+    return ready && callback && setTimeout(callback,1);
   }
 
   return Loader;
