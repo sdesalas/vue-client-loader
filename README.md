@@ -15,13 +15,19 @@ No dependencies or build toolchains required.
     <script type="text/javascript" src="lib/vue-loader.js"></script>
   </head>
   <body>
-  <h2>My Posts</h2>
-  <div v-model="posts" class="item-group">
-    <post v-for="post in posts"></post>
+  <div id="app">
+    <h2>My Posts</h2>
+    <div v-model="posts" class="item-group">
+      <post v-for="post in posts"></post>
+    </div>
   </div>
   </body>
   <script>
-    Vue.Loader.load('components/post.vue');
+    Vue.Loader.load('components/post.vue', function() {
+      var vm = new Vue({
+        el: '#app'
+      });
+    });
   </script>
 </html>
 ```
