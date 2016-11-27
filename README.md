@@ -3,14 +3,14 @@
 Vue Loader is a client-side component loader used to turn `.vue` files into client-side components.
 
 ### `index.html`
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Vue Loader Example</title>
-	  <script type="text/javascript" src="lib/vue-2.1.3/vue.js"></script>
-	  <script type="text/javascript" src="src/vue-loader.js"></script>
+    <script type="text/javascript" src="lib/vue-2.1.3/vue.js"></script>
+    <script type="text/javascript" src="src/vue-loader.js"></script>
   </head>
   <body>
   <h2>My Posts</h2>
@@ -27,7 +27,7 @@ Vue Loader is a client-side component loader used to turn `.vue` files into clie
 Components get loaded directly into the `<body>` tag.
 
 ### `components/post.vue`
-```
+```html
 <template id="post-vue">
     <li class="post-vue-item list-group-item">
         <i class="glyphicon glyphicon-chevron-up" @click="upvote"></i>
@@ -38,8 +38,8 @@ Components get loaded directly into the `<body>` tag.
 </template>
 
 <style>
-	.post-vue-item { width: 200px; }
-  .post-vue-item span.label { font-weight: bold; }
+.post-vue-item { width: 200px; }
+.post-vue-item span.label { font-weight: bold; }
 </style>
 
 <script type="text/javascript">
