@@ -23,10 +23,14 @@ No dependencies or build toolchains required.
   </div>
   </body>
   <script>
-    Vue.Loader.load('components/post.vue', function() {
-      var vm = new Vue({
-        el: '#app'
-      });
+    Vue.Loader.load([
+      'components/post.vue',
+      // other components ..
+      ], function() {
+        var vm = new Vue({
+          el: '#app',
+          data: [...]
+        });
     });
   </script>
 </html>
