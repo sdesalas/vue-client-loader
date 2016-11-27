@@ -42,9 +42,7 @@ Components get loaded directly at the bottom of the `<body>` tag using an `XMLHt
 ```html
 <template id="post-template">
     <div class="post-item list-group-item">
-        <i class="glyphicon glyphicon-chevron-up" @click="upvote"></i>
         <span class="label label-primary">{{ votes }}</span>
-        <i class="glyphicon glyphicon-chevron-down" @click="downvote"></i>
         <a>{{ post.title }}</a>
     </div>
 </template>
@@ -57,17 +55,6 @@ Components get loaded directly at the bottom of the `<body>` tag using an `XMLHt
 <script type="text/javascript">
 Vue.component('navbar', {
   template: "#post-template",
-  props: ['post'],
-  data: function () {
-    return {
-      upvoted: false
-    };
-  },
-  methods: {
-    upvote: function () {
-      this.upvoted = !this.upvoted;
-      this.downvoted = false;
-    }
-  }
+  props: ['post']
 });
 </script>
