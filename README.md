@@ -14,7 +14,7 @@ Vue Loader is a client-side component loader used to turn `.vue` files into clie
   </head>
   <body>
   <h2>My Posts</h2>
-  <div v-model="posts">
+  <div v-model="posts" class="item-group">
     <post v-for="post in posts"></post>
   </div>
   </body>
@@ -29,12 +29,12 @@ Components get loaded directly at the bottom of the `<body>` tag.
 ### `components/post.vue`
 ```html
 <template id="post-vue">
-    <li class="post-vue-item list-group-item">
+    <div class="post-vue-item list-group-item">
         <i class="glyphicon glyphicon-chevron-up" @click="upvote"></i>
         <span class="label label-primary">{{ votes }}</span>
         <i class="glyphicon glyphicon-chevron-down" @click="downvote"></i>
         <a>{{ post.title }}</a>
-    </li>
+    </div>
 </template>
 
 <style>
