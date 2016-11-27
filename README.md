@@ -28,8 +28,8 @@ Components get loaded directly at the bottom of the `<body>` tag.
 
 ### `components/post.vue`
 ```html
-<template id="post-vue">
-    <div class="post-vue-item list-group-item">
+<template id="post-template">
+    <div class="post-item list-group-item">
         <i class="glyphicon glyphicon-chevron-up" @click="upvote"></i>
         <span class="label label-primary">{{ votes }}</span>
         <i class="glyphicon glyphicon-chevron-down" @click="downvote"></i>
@@ -38,8 +38,8 @@ Components get loaded directly at the bottom of the `<body>` tag.
 </template>
 
 <style>
-.post-vue-item { width: 200px; }
-.post-vue-item span.label { font-weight: bold; }
+.post-item { width: 200px; }
+.post-item span.label { font-weight: bold; }
 </style>
 
 <script type="text/javascript">
