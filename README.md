@@ -24,7 +24,7 @@ Vue Loader is a client-side component loader used to turn `.vue` files into clie
 </html>
 ```
 
-Components get loaded directly into the `<body>` tag.
+Components get loaded directly at the bottom of the `<body>` tag.
 
 ### `components/post.vue`
 ```html
