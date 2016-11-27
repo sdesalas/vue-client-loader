@@ -1,6 +1,6 @@
 # vue-loader.js
 
-Vue Loader is a client-side module loader used to turn `.vue` files into client-side components, no complex toolchain required.
+Vue Loader is a client-side module loader used to turn `.vue` files into client-side components, removing the need for complex toolchains.
 
 ### `index.html`
 ```html
