@@ -10,7 +10,7 @@ Vue Loader is a client-side component loader used to turn `.vue` files into clie
     <meta charset="UTF-8">
     <title>Vue Loader Example</title>
     <script type="text/javascript" src="lib/vue-2.1.3/vue.js"></script>
-    <script type="text/javascript" src="src/vue-loader.js"></script>
+    <script type="text/javascript" src="lib/vue-loader.js"></script>
   </head>
   <body>
   <h2>My Posts</h2>
