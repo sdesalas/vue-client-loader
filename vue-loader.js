@@ -6,8 +6,7 @@ window.Vue.Loader = (function() {
 	Loader.vues = {};
 
 	Loader.load = function(paths_to_vue, callback) {
-        console.log('Vue.Loader.load()', paths_to_vue);
-        if (paths_to_vue) {
+        	console.log('Vue.Loader.load()', paths_to_vue);
         	if (typeof paths_to_vue === 'string') {
         		paths_to_vue = [paths_to_vue];
         	}
@@ -19,12 +18,10 @@ window.Vue.Loader = (function() {
 	        } else {
 	        	throw Error('Vue.Loader.load(). Please pass in a string or an array of strings.');
 	        }
-        }
 	};
 
 	Loader.getVue = function(path_to_vue, callback) { 
-        console.log('Vue.Loader.getVue()', path_to_vue);
-		var body = document.body;
+        	console.log('Vue.Loader.getVue()', path_to_vue);
 		if (path_to_vue) {
 			var xhr = new XMLHttpRequest();
 			xhr.onreadystatechange = function() {
@@ -42,15 +39,15 @@ window.Vue.Loader = (function() {
 	};
 
 	Loader.vueReady = function(path_to_vue, callback) {
-        console.log('Vue.Loader.vueReady()', path_to_vue);
-        var vue = Loader.vues[path_to_vue],
+        	console.log('Vue.Loader.vueReady()', path_to_vue);
+        	var vue = Loader.vues[path_to_vue],
         	ready = true;
-        if (vue) vue.ready = true;
-        Object.keys(Loader.vues).forEach(function(vue) {
-        	if (vue.ready !== true) ready = false;
-        });
-        if (ready && callback) callback();
-	}
+        	if (vue) vue.ready = true;
+        	Object.keys(Loader.vues).forEach(function(vue) {
+        		if (vue.ready !== true) ready = false;
+       		 });
+        	if (ready && callback) callback();
+	};
 
 	return Loader;
 
