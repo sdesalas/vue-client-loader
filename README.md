@@ -53,7 +53,7 @@ Components get loaded directly at the bottom of the `<body>` tag using an `XMLHt
 </style>
 
 <script type="text/javascript">
-Vue.component('navbar', {
+Vue.component('post', {
   template: "#post-template",
   props: ['post']
 });
