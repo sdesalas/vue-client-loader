@@ -26,7 +26,7 @@ No dependencies or build toolchains required.
 </html>
 ```
 
-Components get loaded directly at the bottom of the `<body>` tag.
+Components get loaded directly at the bottom of the `<body>` tag using an `XMLHttpRequest`.
 
 ### `components/post.vue`
 ```html
