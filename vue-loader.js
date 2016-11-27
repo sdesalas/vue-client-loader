@@ -1,4 +1,4 @@
-window.Vue = window.Vuew || {};
+window.Vue = window.Vue || {};
 window.Vue.Loader = (function() {
 
 	var Loader = {};
