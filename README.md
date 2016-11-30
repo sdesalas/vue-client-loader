@@ -12,7 +12,7 @@ No dependencies or build toolchains required.
     <meta charset="UTF-8">
     <title>Vue Loader Example</title>
     <script type="text/javascript" src="lib/vue-2.1.3/vue.js"></script>
-    <script type="text/javascript" src="lib/vue-loader.js"></script>
+    <script type="text/javascript" src="lib/vue-client-loader.js"></script>
   </head>
   <body>
   <div id="app">
@@ -23,7 +23,7 @@ No dependencies or build toolchains required.
   </div>
   </body>
   <script>
-    Vue.Loader.load([
+    Vue.ClientLoader.load([
       'components/post.vue',
       // other components ..
       ], function() {
